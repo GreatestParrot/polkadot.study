@@ -74,6 +74,14 @@ const sidebars = {
     "decentralized-exchange-ink/unit-testing",
     "decentralized-exchange-ink/conclusion",
   ],
+  kusamaTheoryPracticeSidebar: [
+      "kusama-theory-practice/intro",
+      "kusama-theory-practice/intro-to-polkadot",
+      "kusama-theory-practice/ecosystem-explained",
+      "kusama-theory-practice/practice-wallet",
+      "kusama-theory-practice/first-transaction",
+      "kusama-theory-practice/practice-transaction"
+  ]
 };
 
 module.exports = sidebars;
