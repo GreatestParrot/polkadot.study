@@ -80,7 +80,11 @@ const sidebars = {
       "kusama-theory-practice/ecosystem-explained",
       "kusama-theory-practice/practice-wallet",
       "kusama-theory-practice/first-transaction",
-      "kusama-theory-practice/practice-transaction"
+      "kusama-theory-practice/practice-transaction",
+      "kusama-theory-practice/talisman",
+      "kusama-theory-practice/ledger",
+      "kusama-theory-practice/novawallet",
+      "kusama-theory-practice/practice-proposal"
   ]
 };
 
