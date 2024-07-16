@@ -93,6 +93,12 @@ const sidebars = {
       "kusama-theory-practice/karura",
       "kusama-theory-practice/basilisk",
       "kusama-theory-practice/moonriver",
+      "kusama-theory-practice/ipfs",
+      "kusama-theory-practice/practice-ipfs",
+      "kusama-theory-practice/crust",
+      "kusama-theory-practice/practice-crust",
+      "kusama-theory-practice/crust-routine",
+
   ]
 };
 
