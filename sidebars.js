@@ -98,6 +98,12 @@ const sidebars = {
       "kusama-theory-practice/crust",
       "kusama-theory-practice/practice-crust",
       "kusama-theory-practice/crust-routine",
+      "kusama-theory-practice/robonomics",
+      "kusama-theory-practice/lamp",
+      "kusama-theory-practice/practice-lamp",
+      "kusama-theory-practice/spot",
+      "kusama-theory-practice/practice-spot",
+      "kusama-theory-practice/has",
 
   ]
 };
