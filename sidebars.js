@@ -89,6 +89,10 @@ const sidebars = {
       "kusama-theory-practice/token-manage",
       "kusama-theory-practice/practice-mint",
       "kusama-theory-practice/polkadot-auth",
+      "kusama-theory-practice/ksm",
+      "kusama-theory-practice/karura",
+      "kusama-theory-practice/basilisk",
+      "kusama-theory-practice/moonriver",
   ]
 };
 
