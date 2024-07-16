@@ -84,7 +84,11 @@ const sidebars = {
       "kusama-theory-practice/talisman",
       "kusama-theory-practice/ledger",
       "kusama-theory-practice/novawallet",
-      "kusama-theory-practice/practice-proposal"
+      "kusama-theory-practice/practice-proposal",
+      "kusama-theory-practice/token-mint",
+      "kusama-theory-practice/token-manage",
+      "kusama-theory-practice/practice-mint",
+      "kusama-theory-practice/polkadot-auth",
   ]
 };
 
