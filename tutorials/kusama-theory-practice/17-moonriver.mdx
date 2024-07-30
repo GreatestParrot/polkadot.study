@@ -90,3 +90,49 @@ We discussed two DEX protocols in the Kusama network, Karura and Basilisk, and h
 ## **Next module**
 
 In the next module we’ll get acquainted with Crust Network, where we will discover how this powerful blockchain network opens the doors to unprecedented decentralization and data management. We will examine how Crust Network operates under the hood and what opportunities it offers for creating next-generation decentralized applications and services.
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "Choose utility functions of the MOVR token in the Moonriver network:",
+  answers: [
+    "Securing network via incentivizing collators",
+    "Off-chain messaging",
+    "Participating in on-chain governance",
+    "Exchange trading",
+    "Paying for transaction fees",
+    "Facilitating the execution of smart contracts"
+  ],
+  correctAnswerIdx: [0, 2, 4, 5],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "To support cross-chain communication between different networks within Polkadot and Kusama, Moonbeam/Moonriver actively utilize HRMP as a messaging transport. Recall how HRMP works:",
+  answers: [
+    "it offers a secure message passing between parachains with direct communications without need for the Relay Chain storage",
+    "it offers a secure message passing between parachains with storing all messages in the Relay Chain storage",
+    "it offers a secure message passing between parachains via external blockchain network",
+    "it offers a secure message passing between parachains through an off-chain communication mechanism"
+  ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "Let's assume that the XYZ token of a certain Parachain X exists on both the Kusama and Ethereum networks. Choose the correct sequence of steps to transfer this token from Kusama to Etherum using Moonriver:",
+  answers: [
+    "Parachain X — direct sending — Moonriver Network — bridge — Ethereum Network",
+    "Parachain X — XCM transfer — Moonriver Network — bridge — Ethereum Network",
+    "Parachain X — external bridge  — Moonriver Network — bridge — Ethereum Network",
+    "Parachain X — bridge — Moonriver Network — XCM transfer — Ethereum Network"
+  ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />
+<Quiz quizItem={questions[2]} />

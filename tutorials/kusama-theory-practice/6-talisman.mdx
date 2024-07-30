@@ -70,18 +70,33 @@ A Ledger wallet is a physical device that keeps your cryptocurrency safe. It sto
 
 The Talisman wallet web extension is available on Chromium-based browsers (such as Brave, Chrome, and Edge) and Firefox. You can find it on the [Google Web Store](https://chrome.google.com/webstore/detail/talisman-polkadot-wallet/fijngjgcjhjmmpcmkeiomlglpeiijkld). If you haven't already, we recommend watching the video lesson for direct instructions on installation.
 
+import Quiz from "/src/components/quiz";
 
-<!-- <QuizBlock -->
-<!-- quizUrl="https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-18e93402-1ffe-47e8-be1d-e28a6ac871f1/default/Quiz" -->
-<!-- quizId="question4.1" -->
-<!-- /> -->
+export const questions = [{
+  question: "How does the nominated proof-of-stake (NPoS) mechanism, that used in Polkadot and Kusama, differ from the simple proof-of-stake mechanism?",
+  answers: [
+    "In NPoS, the calculations needed to generate blocks should be nominated by token holders.",
+    "In NPoS, in order for validators to participate in consensus, token holders must vote for them with their stake of tokens.",
+    "In NPoS, the probability of generating a block depends on the amount of tokens.",
+    "In NPoS, validators negotiate offchain how fast they should generate a block in order to get the maximum profit for the nominators."
+      ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "Let's assume that a certain XXX token exists in two networks, Ethereum and Polkadot. Can you transfer your XXX token balance from one network to another directly?",
+  answers: [
+    "Yes, you just need to pay a fee to the network provider.",
+    "No, this is not possible at the protocol level.",
+    "Yes, it is enough to send tokens to an address in another network.",
+    "No, for this you need to use a bridge between networks."
+      ],
+  correctAnswerIdx: [3],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
 
-<!-- <QuizBlock -->
-<!-- quizUrl="https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-18e93402-1ffe-47e8-be1d-e28a6ac871f1/default/Quiz" -->
-<!-- quizId="question4.2" -->
-<!-- /> -->
 
-<!-- <QuizBlock -->
-<!-- quizUrl="https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-18e93402-1ffe-47e8-be1d-e28a6ac871f1/default/Quiz" -->
-<!-- quizId="question4.3" -->
-<!-- /> -->
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

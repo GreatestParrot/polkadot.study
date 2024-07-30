@@ -83,3 +83,36 @@ When a project applies for a parachain slot, an auction takes place, requiring D
 Imagine you hold 1 KSM token and are looking for investment opportunities. You browse through the projects participating in the Kusama crowdloan and choose one. This project offers 10 of its tokens in exchange for 1 KSM token. You lock your KSM tokens for this project, and if it wins the auction, you receive those 10 tokens. If not, your KSM tokens are returned. Additionally, you regain your KSM tokens when the parachain slot duration for this project expires.
 
 The winner of the first auction was Karura, a decentralized finance platform that raised over 500.000 KSM tokens (worth over $100 million at the time) from more than 14.000 contributors. For each KSM token they gave away minimum 12 KAR and overall distributed almost 7 million KAR.
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "Airdrops sound very attractive to the community, but this mechanism is often used to defraud and steal user funds. Select from the list below potential scam schemes with airdrops that you need to be wary of:",
+  answers: [
+    "A well-known influencer invites followers on the social network to receive free tokens by clicking on the link.",
+    "You receive an email congratulating you on receiving reward tokens for using a decentralized exchange. To do this, you just need to send your wallet private key.",
+    "You discover in the blockchain explorer that new tokens have appeared on your account. The description states that you need to claim them on a special website.",
+    "A popular web3 service invites participants to receive free tokens as a gift, for which you need to connect the wallet to their new dapp."
+  ],
+  correctAnswerIdx: [0, 1, 2, 3],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "Select the red flags that indicate that a crypto project about to conduct an ICO will potentially be a scam:",
+  answers: [
+    "Lack of publications about the project in scientific journals",
+    "Lack of whitepaper or its poor quality",
+    "Empty public repositories of project code",
+    "The team comes from jurisdictions where cryptocurrencies are in a gray area of law",
+    "The project uses cryptocurrency only as an auxiliary tool for its technology",
+    "A large number of pre-created tokens distributed privately for small group"
+  ],
+  correctAnswerIdx: [1, 2, 5],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

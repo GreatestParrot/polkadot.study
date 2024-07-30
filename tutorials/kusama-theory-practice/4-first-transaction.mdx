@@ -78,3 +78,22 @@ Let's summarise what we've learned from the first part of our course:
 ### Next module
 
 In our next module, we will become acquainted with **crypto-wallets**, especially made for Web3 needs, which you can create to interact with the Polkadot ecosystem. Stay tuned!
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "What allows to have full control over actions with a cryptocurrency wallet?",
+  answers: [
+    "Public key",
+    "Seed phrase",
+    "Private key",
+    "Public address",
+    "Mnemonic phrase"
+  ],
+  correctAnswerIdx: [1, 2, 4],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />

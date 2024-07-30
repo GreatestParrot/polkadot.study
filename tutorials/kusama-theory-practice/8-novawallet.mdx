@@ -104,3 +104,35 @@ The upcoming module of our course will focus on managing assets via AssetHub, a 
 ## **Extra**
 
 [A Walkthrough of Polkadot’s Governance](https://www.polkadot.network/blog/a-walkthrough-of-polkadots-governance)
+
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "What is the easiest way to participate in the staking in Polkadot and Kusama?",
+  answers: [
+    "Join a nomination pool",
+    "Open a nomination pool",
+    "Become a validator",
+    "Nominate validators on your own"
+      ],
+  correctAnswerIdx: [0],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "What happens if the validator does not perform its functions, misbehaves or harms the network?",
+  answers: [
+    "Banning — the validator will be permanently banned from connecting to the network",
+    "Slashing — the validator and its nominators will lose a percentage of their staked tokens",
+    "Auditing — the validator will have to pass the verification procedure by a special authority of the network",
+    "Shifting — all current nominators will shift from this validator to random others"
+      ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

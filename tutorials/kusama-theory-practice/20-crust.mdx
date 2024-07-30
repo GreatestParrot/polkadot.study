@@ -110,3 +110,37 @@ Your data will be accessible in IPFS network by CID as long, as it was placed in
 [Crust Economic Whitepaper](https://ipfs.io/ipfs/QmRYJN6V5BzwnXp7A2Avcp5WXkgzyunQwqP3Es2Q789phF)
 
 [Crust Wiki](https://wiki.crust.network/docs/en/crustOverview.html)
+
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "How many months does a file stored in Crust Network by default?",
+  answers: [
+    "12",
+    "6",
+    "24",
+    "2"
+  ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "What are the token variants in Crust networks?",
+  answers: [
+    "CRU",
+    "CRS",
+    "CCM",
+    "CSM",
+    "CMS",
+    "CRM"
+  ],
+  correctAnswerIdx: [0, 3],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

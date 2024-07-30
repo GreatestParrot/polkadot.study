@@ -69,3 +69,34 @@ LP staking is also available on Karura. It is the process of transferring LP tok
 ### Governance in Karura
 
 Karura takes a phased approach to employ various governance mechanisms that will allow it to progressively decentralize and ultimately be commanded by the majority network stakeholders. Karura's governance framework is based on Polkadot's technology and consists of a few councils: general council, financial council, liquid staking council, and technical committee.
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "What is a liquidity pool?",
+  answers: [
+    "a stablecoin that is held in significant quantities by exchanges as part of their emergency exchange reserves",
+    "a list of all open orders that are currently available for trade for a specific crypto pair",
+    "a reserve of tokens locked via smart contract for regulator check",
+    "a crowdsourced reserve of tokens locked via smart contract for trades between the assets"
+  ],
+  correctAnswerIdx: [3],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "Important concept that you will frequently encounter when using DEX is price impact. Before each token swap, you will see the percentage by which the swap will affect its price (which is algorithmically determined). This impact needs to be understood when making transactions so as not to experience too much increase or decrease in the value of the token. Let's assume you want to swap the token aUSD for the token KSM, and currently 1 KSM = 20 aUSD. In the pool, there are 1000 KSM and 20000 aUSD. You have two options: sell 100 aUSD or 1000 aUSD. In which case will the price of 1 KSM be higher for you?",
+  answers: [
+    "When selling 100 aUSD",
+    "When selling 1000 aUSD",
+    "The price is the same for both options and is equal to 20 aUSD",
+    "The price will increase for both options and will become equal to 21 aUSD"
+  ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

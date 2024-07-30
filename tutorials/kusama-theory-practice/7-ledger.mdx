@@ -50,17 +50,34 @@ Safeguard the recovery seed as it is crucial for wallet recovery in case of loss
 
 Remember to treat your Ledger wallet like you would treat physical cash or valuable items, and always keep the device and recovery seed in a safe place to ensure the security of your digital assets.
 
-<!-- {/* <QuizBlock */} -->
-<!-- {/* quizUrl="https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-18e93402-1ffe-47e8-be1d-e28a6ac871f1/default/Quiz" */} -->
-<!-- {/* quizId="question5.1" */} -->
-<!-- {/* /> */} -->
 
-<!-- {/* <QuizBlock */} -->
-<!-- {/* quizUrl="https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-18e93402-1ffe-47e8-be1d-e28a6ac871f1/default/Quiz" */} -->
-<!-- {/* quizId="question5.2" */} -->
-<!-- {/* /> */} -->
+import Quiz from "/src/components/quiz";
 
-<!-- {/* <QuizBlock */} -->
-<!-- {/* quizUrl="https://faas-fra1-afec6ce7.doserverless.co/api/v1/web/fn-18e93402-1ffe-47e8-be1d-e28a6ac871f1/default/Quiz" */} -->
-<!-- {/* quizId="question5.3" */} -->
-<!-- {/* /> */} -->
+export const questions = [{
+  question: "What is stored on the crypto hardware wallet?",
+  answers: [
+    "Cryptocurrency",
+    "NFTs",
+    "Private key",
+    "Whole blockchain"
+      ],
+  correctAnswerIdx: [2],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "In which case your seed phrase can be considered NOT compromised?",
+  answers: [
+    "You sent your seed phrase to yourself as message in the messenger.",
+    "You saved the seed phrase to a text file on your computer.",
+    "You saved your seed phrase in the cloud storage.",
+    "You memorized your seed phrase."
+      ],
+  correctAnswerIdx: [3],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

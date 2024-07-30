@@ -58,3 +58,24 @@ You could deepen you knowledge of Robonomics Network with:
 - [Whitepaper](https://www.notion.so/Robonomics-89eff6cb75ac4b9680ca943ca2c332cd?pvs=21)
 - [Intro](https://robonomics.network/intro/)
 - [Wiki](https://www.notion.so/Robonomics-89eff6cb75ac4b9680ca943ca2c332cd?pvs=21)
+
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "The idea of Robonomics was largely born out of the problems of current solutions for building IoT systems. Select these problems:",
+  answers: [
+    "the need to send data from devices",
+    "issues of protection against failures, hacks and attacks",
+    "leaks of personal data",
+    "the high cost of sending transactions",
+    "occasional disruptions to the availability of cloud services",
+    "high power consumption of cloud"
+  ],
+  correctAnswerIdx: [1, 2, 4],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />

@@ -53,3 +53,34 @@ Once installed, you can start an IPFS node, which will join the global IPFS netw
 ## **Extra**
 
 [IPFS Whitepaper](https://github.com/ipfs/papers/raw/master/ipfs-cap2pfs/ipfs-p2p-file-system.pdf)
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "What happens if you replace the contents of a file previously uploaded to IPFS?",
+  answers: [
+    "The link to the file remains the same, only the CID will change.",
+    "The CID and, accordingly, the link to the file will be completely different.",
+    "The link to the file will change, but its CID will remain the same.",
+    "The link and CID will remain the same."
+  ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "Assuming you have uploaded a file to IPFS, but then realized that it contains private data and now you want to delete it. Will you be able to do this?",
+  answers: [
+    "Yes, it is enough to delete the file from your local node",
+    "No if it has already been replicated by other peers",
+    "Yes, you just need to replace the file with an empty file with the same CID",
+    "No, all files in IPFS are stored forever"
+  ],
+  correctAnswerIdx: [1],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />

@@ -88,3 +88,51 @@ We recommend using the Chinese marketplace [Huobi](https://www.huobi.com/ru-ru/)
 2. The second method involves getting crypto on a decentralized exchange, which requires a non-custodial wallet connected to the platform, such as MetaMask. However, it is not compatible with DOT and KSM, so it is not suitable for us. Talisman, Nova, and Polkadot.js wallets, which we have discussed in our tutorials, are recommended. When using such wallets, you are fully responsible for the safety of your funds, and the exchanges themselves do not store any of your data. There is also a risk - if you lose the key to your wallet, no one will restore it.
 
 To get KSM via decentralized exchanges, refer to the list of DEX on [coinmarketcap.com](http://coinmarketcap.com/) as mentioned earlier. Our recommend is to use the most suitable one - Karura, the DeFi hub of Kusama. We will explain how it works in our next lesson. Stay tuned!
+
+import Quiz from "/src/components/quiz";
+
+export const questions = [{
+  question: "Let's remember the types of tokens in terms of legal status. What type of KSM token may be classified as?",
+  answers: [
+    "Security token",
+    "Non-fungible token",
+    "Utility token",
+    "Exchange token"
+  ],
+  correctAnswerIdx: [2],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "Use the services CoinGecko or CoinMarketCap to find out which of the listed exchanges are decentralized:",
+  answers: [
+    "Coinbase Exchange",
+    "Bitfinex",
+    "PancakeSwap",
+    "Bittrex",
+    "Helix",
+    "OKX"
+  ],
+  correctAnswerIdx: [2, 4],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+},
+{
+  question: "What capabilities does the KSM token holder have in the Kusama network?",
+  answers: [
+    "Participate in staking",
+    "Participate in proof-of-work",
+    "Participate in Democracy",
+    "Participate in crowdloans",
+    "Access to a limited club of network owners",
+    "Set your on-chain identity"
+  ],
+  correctAnswerIdx: [0, 2, 3, 5],
+  msgCorrect: "Correct answer. Good job.",
+  msgIncorrect: "Incorrect answer. Please try again.",
+}];
+
+
+<Quiz quizItem={questions[0]} />
+<Quiz quizItem={questions[1]} />
+<Quiz quizItem={questions[2]} />
